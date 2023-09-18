@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="heading">
+    <label for="">Choose Your Location</label>
+  </div>
+  <div class="location-list">
+    <div *ngFor="let location of locations" class="location-item">
+      <input class="location-input" type="radio" name="flexRadioDefault" id="{{location.name}}"/>
+      <label class="location-label form-check-label" for="{{location.name}}">{{location.locality}}, {{location.street}}, {{location.city}}</label>
+      <div style="display: flex; gap: 5px;">
+        <button type="button" class="btn btn-danger px-3"><i class="fas fa-edit" (click)="edit()" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn-danger px-3"><i class="fas fa-trash" (click)="delete1(location.id)" aria-hidden="true"></i></button>
+      </div>
+
+
+    </div>
+    <div style="justify-content: center;display: flex;">
+      <button type="button" class="btn btn-danger btn-rounded">proceed to pay</button>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="button " style="position: fixed;bottom: 20px;right: 20px;">
+  <button type="button" class="btn btn-floating"(click)="add()" >
+    <i class="fas fa-plus"></i>
+  </button>
+</div>

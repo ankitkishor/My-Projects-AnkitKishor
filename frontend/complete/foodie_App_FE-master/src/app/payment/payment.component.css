@@ -1,0 +1,134 @@
+.order-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin: 4rem 30rem;
+    padding: 20px;
+
+  }
+  
+  .order-card-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .order-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .address {
+    margin-bottom: 20px;
+  }
+  
+  .location {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-details {
+    margin-bottom: 20px;
+  }
+  .order {
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .order-summary {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-summary button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .order-summary button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .total {
+    margin: 0;
+  }
+  
+  .mode {
+    margin: 0;
+  }
+  
+  .order-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s;
+  }
+  
+  .order-card:hover .order-card-header {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+  }
+  
+  .order-card:hover .order-card-body {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+  }
+  button {
+    background-color: #3e8e41;
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    /* gap: 2px; */
+  }
+  button:hover {
+    background-color: #fa0101;
+
+  }
+  
+  .address {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .address button {
+    margin-top: 10px;
+    font-size: 10px;
+    align-self: flex-start;
+  }
+  

@@ -1,0 +1,131 @@
+<!-- <div style="display: flex; justify-content: center;">
+  <div>
+ Payment:- Cash On Delivery
+</div>
+</div>
+<div>
+  Delivery to: {{address.name}} , {{address.city}}
+  Contact : {{address.number}}
+</div>
+<div style="display: flex; justify-content: center;" >
+<div>
+  Your Order
+</div>
+<div *ngFor="let cuisine of cuisines">
+{{cuisine.name}}:  X{{cuisine.quantity}}
+</div>
+<div>
+  Your Total :- {{total}}
+</div>
+<div>
+  <button (click)="order()">Confirm Your Order</button>
+</div>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!--  
+<div>
+  <h3 class="mode">Payment Mode: Cash On Delivery</h3>
+</div>
+
+<div class="address">
+  <p>Delivery Address:</p>
+  <p>Name: {{address.name}}</p>
+  <p>Contact Number: {{address.number}}</p>
+  <div style="display: flex;">
+    <p>location :{{address.city}},
+      {{address.street}},
+      {{address.locality}}</p>
+     <button>Change Address</button>
+  </div>
+  
+</div>
+
+<div>
+  <h3>Your Order</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Cuisine</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cuisine of cuisines">
+        <td>{{cuisine.name}}</td>
+        <td>{{cuisine.price}}</td>
+        <td>{{cuisine.quantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <h3 class="total">Total: {{total}}</h3>
+  <button (click)="order()">Confirm Your Order</button>
+</div> -->
+
+
+
+<div class="order-card">
+  <div class="order-card-header">
+    <h3 class="mode">Payment Mode: Cash On Delivery</h3>
+  </div>
+
+  <div class="order-card-body">
+    <div class="address">
+      <p>Delivery Address:</p>
+      <p>Name: {{address.name}}</p>
+      <p>Contact Number: {{address.number}}</p>
+      <div class="location">
+        <p>Location: {{address.city}}, {{address.street}}, {{address.locality}}</p>
+        <button>Change Address</button>
+      </div>
+    </div>
+
+    <div class="order-details">
+
+      <div class="order">
+        <h3>Your Order</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Cuisine</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let cuisine of cuisines">
+                <td>{{cuisine.name}}</td>
+                <td>{{cuisine.price}}</td>
+                <td>{{cuisine.quantity}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="order-summary">
+      <h3 class="total">Total: {{total}}</h3>
+      <button (click)="order()">Confirm Your Order</button>
+    </div>
+  </div>
+</div>
+<div style="margin: 30px;">
+
+</div>
